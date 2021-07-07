@@ -1,0 +1,66 @@
+<!-- Name:Thakor Arpitsinh,
+UID:20BCS2221,
+20ITA-1
+Web development -->
+<html>
+    <head>
+        <title>Q8</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function printPrime() {
+                var i = 0;
+                var j = 0;
+ 
+                limit = document.getElementById('limit').value;
+ 
+                //loop till i equals to $limit
+                for (i = 1; i <= limit; i++) {
+                    c = 0;
+ 
+                    for (j = 1; j <= i; j++) {
+                        // % modules will give the reminder value, so if the reminder is 0 then it is divisible
+                        if (i % j == 0) {
+                            //increment the value of c
+                            c++;
+                        }
+                    }
+ 
+                    //if the value of c is 2 then it is a prime number
+                    //because a prime number should be exactly divisible by 2 times only (itself and 1)
+                    if (c == 2) {
+                        document.getElementById("result").insertAdjacentHTML('beforeend', i + '<br>');
+                    }
+                }
+            }
+        </script>
+        <style>
+            body{
+                background-color:thistle;
+                text-align: center;
+            }
+            button{
+                border-radius: 15px;
+                background-color:yellowgreen;
+            }
+            h2{
+                color:rgb(0, 64, 255);
+            }
+            h3{
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Enter Limit for  Prime numbers!</h2>
+        Enter the limit:  <input type="number" name="limit" id="limit" min="0" style="width: 100px;" /><input type="submit" value="Print Prime Numbers" onclick="printPrime()" name="print" />
+        <div id="result"></div>
+        <h2>Here are next 20 leap year from 2020</h2>
+        <script src="q8.js"></script><br>
+        <h2>Click below for Starting game!</h2>
+        <button type="button" onclick="game()">TO START GAME PLEASE CLICK HERE</button>
+            <p id="demo"></p>
+            
+        <script src="q5.js"></script>
+    </body>
+</html>

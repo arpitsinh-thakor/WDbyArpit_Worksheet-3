@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+    <script type=text/javascript>
+        function myfunction() {
+            document.getElementById('id1').style.backgroundColor="red";
+        }
+        function myfunction4() {
+            document.getElementById('id4').style.backgroundColor="red";
+        }
+        function myfunction2() {
+            document.getElementById('id1').style.color="White";
+        }
+        function myfunction5() {
+            document.getElementById('id4').style.color="White";
+        }
+        function myfunction1() {
+            document.getElementById('bg').style.backgroundColor="yellow";   }
+        </script>
+        <style>
+            body{  background-color: aqua;  }
+            button{background-color: yellow;
+            border-radius: 10px;}
+        </style>
+</head>
+<body id="bg">
+    <center>
+        <h1 id="id1">HERE IS WEB DEVELOMENT Worksheet-3</h1>
+    <h1 id="id4">HELLO😄😄!! HOW ARE YOU☺🙂!! Here is  color change</h1>
+    <button type="button" onclick="myfunction(),myfunction4() "style="color:red;">
+    Click Me! To Change background-Color of TEXT</button>
+
+    <button type="button" onclick="myfunction2(),myfunction5() "style="color:red;">
+    Click Me! To Change Color of TEXT</button><br>
+    <br>
+    <button type="button" onclick="myfunction1()" style="color:red;">
+        Click Me! To Change Background-Color of Whole Page</button>
+        <h4>CHOOSE FUNCTION FOR EXECUTION:BUTTONS ARE ABOVE</h4>
+    </center> 
+</body>
+</html>

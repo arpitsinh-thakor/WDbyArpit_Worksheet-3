@@ -1,0 +1,89 @@
+<!-- Name:Thakor Arpitsinh,
+UID:20BCS2221,
+20ITA-1
+Web development -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+    <script src="q3.js"></script>
+    <style>
+        body{
+            text-align: center;
+            background-image: url("space-img.png");
+            background-size: cover;
+        }
+        form{
+            text-align:center;
+            color: lawngreen;
+        }
+        h1{
+            color: red;
+        }
+        h2{
+            color: yellow;
+        }
+        p{
+            color:turquoise;
+        }
+        h3{
+            color:yellow;
+        }
+        a{
+            background-color: white;
+        }
+        textarea{
+          border-radius: 25px;
+          background-color:skyblue;
+          text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select below radio button for details of different Planets </h1>
+    <form name="planetForm">
+        <input type="radio" name="planetButtons" value="Sun"
+          onClick="planetClick(this)">Sun<br>
+         <input type="radio" name="planetButtons" value="Mercury"
+          onClick="planetClick(this)">Mercury<br>
+        <input type="radio" name="planetButtons" value="Venus"
+          onClick="planetClick(this)">Venus<br>
+        <input type="radio" name="planetButtons" value="Earth"
+          onClick="planetClick(this)">Earth<br>
+        <input type="radio" name="planetButtons" value="Mars"
+          onClick="planetClick(this)">Mars<br>
+        <input type="radio" name="planetButtons" value="Jupiter"
+          onClick="planetClick(this)">Jupiter<br>
+        <input type="radio" name="planetButtons" value="Saturn"
+          onClick="planetClick(this)">Saturn<br>
+        <input type="radio" name="planetButtons" value="Uranus"
+          onClick="planetClick(this)">Uranus<br>
+        <input type="radio" name="planetButtons" value="Neptune"
+          onClick="planetClick(this)">Neptune<br>
+        <input type="radio" name="planetButtons" value="Pluto"
+          onClick="planetClick(this)">Pluto<br>
+        <br>
+        <textarea name="planetData" value="" readonly rows="5" cols="100">
+        </textarea>
+      </form>
+      <h3>Hopping this data helps you. this data is taken from 3rd party websites it may be wrong, no correctness rights is taken</h3>
+      <a href="https://space-facts.com/planets/" target="_blank">Wekipedia</a>
+      <a href="https://space-facts.com/planets/" target="_blank">Space Facts</a>
+      <p>NOTE:Following above sites are used for data</p>
+      <script language="JavaScript">
+      </script>
+      <h2>My age is:
+      <script type="text/javaScript">
+        var tillnowyears = new Date;
+        var thisYear = tillnowyears.getYear()
+        if (thisYear < 1900) {
+          thisYear += 1900
+        }
+        document.write("<h1>"+(thisYear - 2002)+"</h1")
+      </script></h2>
+      
+</body>
+</html>
